@@ -1,0 +1,94 @@
+[2022-02-09 08:33:23] local.ERROR: ErrorException: Use of undefined constant MCRYPT_RIJNDAEL_128 - assumed 'MCRYPT_RIJNDAEL_128' (this will throw an Error in a future version of PHP) in /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:16
+Stack trace:
+#0 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(16): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Use of undefine...', '/app/web/weboff...', 16, Array)
+#1 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(776): Illuminate\Encryption\EncryptionServiceProvider->Illuminate\Encryption\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(659): Illuminate\Container\Container->build(Object(Closure), Array)
+#3 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(644): Illuminate\Container\Container->make('encrypter', Array)
+#4 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(890): Illuminate\Foundation\Application->make('encrypter')
+#5 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(851): Illuminate\Container\Container->resolveClass(Object(ReflectionParameter))
+#6 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(815): Illuminate\Container\Container->getDependencies(Array, Array)
+#7 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(659): Illuminate\Container\Container->build('Illuminate\\Cook...', Array)
+#8 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(644): Illuminate\Container\Container->make('Illuminate\\Cook...', Array)
+#9 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(124): Illuminate\Foundation\Application->make('Illuminate\\Cook...')
+#10 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(42): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(125): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#13 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(100): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#14 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(115): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#15 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(84): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#16 /app/web/weboffice/apps/mensa/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#17 {main}  
+[2022-02-09 08:33:23] local.ERROR: ErrorException: Use of undefined constant MCRYPT_RIJNDAEL_128 - assumed 'MCRYPT_RIJNDAEL_128' (this will throw an Error in a future version of PHP) in /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php:16
+Stack trace:
+#0 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(16): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Use of undefine...', '/app/web/weboff...', 16, Array)
+#1 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(776): Illuminate\Encryption\EncryptionServiceProvider->Illuminate\Encryption\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(659): Illuminate\Container\Container->build(Object(Closure), Array)
+#3 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(644): Illuminate\Container\Container->make('encrypter', Array)
+#4 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(890): Illuminate\Foundation\Application->make('encrypter')
+#5 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(851): Illuminate\Container\Container->resolveClass(Object(ReflectionParameter))
+#6 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(815): Illuminate\Container\Container->getDependencies(Array, Array)
+#7 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Container/Container.php(659): Illuminate\Container\Container->build('Illuminate\\Cook...', Array)
+#8 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(644): Illuminate\Container\Container->make('Illuminate\\Cook...', Array)
+#9 /app/web/weboffice/apps/mensa/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(131): Illuminate\Foundation\Application->make('Illuminate\\Cook...')
+#10 /app/web/weboffice/apps/mensa/public/index.php(58): Illuminate\Foundation\Http\Kernel->terminate(Object(Illuminate\Http\Request), Object(Symfony\Component\HttpFoundation\Response))
+#11 {main}  
+[2022-02-09 10:23:35] local.ERROR: ErrorException: Use of undefined constant MCRYPT_RIJNDAEL_128 - assumed 'MCRYPT_RIJNDAEL_128' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Encryption\EncryptionServiceProvider.php:16
+Stack trace:
+#0 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Encryption\EncryptionServiceProvider.php(16): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(776): Illuminate\Encryption\EncryptionServiceProvider->Illuminate\Encryption\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(659): Illuminate\Container\Container->build(Object(Closure), Array)
+#3 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(644): Illuminate\Container\Container->make('encrypter', Array)
+#4 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(890): Illuminate\Foundation\Application->make('encrypter')
+#5 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(851): Illuminate\Container\Container->resolveClass(Object(ReflectionParameter))
+#6 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(815): Illuminate\Container\Container->getDependencies(Array, Array)
+#7 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(659): Illuminate\Container\Container->build('Illuminate\\Cook...', Array)
+#8 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(644): Illuminate\Container\Container->make('Illuminate\\Cook...', Array)
+#9 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(124): Illuminate\Foundation\Application->make('Illuminate\\Cook...')
+#10 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode.php(42): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(125): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#12 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#13 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(100): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(115): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#15 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(84): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\mensa\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#17 {main}  
+[2022-02-09 10:23:35] local.ERROR: ErrorException: Use of undefined constant MCRYPT_RIJNDAEL_128 - assumed 'MCRYPT_RIJNDAEL_128' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Encryption\EncryptionServiceProvider.php:16
+Stack trace:
+#0 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Encryption\EncryptionServiceProvider.php(16): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(776): Illuminate\Encryption\EncryptionServiceProvider->Illuminate\Encryption\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(659): Illuminate\Container\Container->build(Object(Closure), Array)
+#3 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(644): Illuminate\Container\Container->make('encrypter', Array)
+#4 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(890): Illuminate\Foundation\Application->make('encrypter')
+#5 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(851): Illuminate\Container\Container->resolveClass(Object(ReflectionParameter))
+#6 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(815): Illuminate\Container\Container->getDependencies(Array, Array)
+#7 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(659): Illuminate\Container\Container->build('Illuminate\\Cook...', Array)
+#8 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(644): Illuminate\Container\Container->make('Illuminate\\Cook...', Array)
+#9 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(131): Illuminate\Foundation\Application->make('Illuminate\\Cook...')
+#10 C:\xampp\htdocs\mensa\public\index.php(58): Illuminate\Foundation\Http\Kernel->terminate(Object(Illuminate\Http\Request), Object(Symfony\Component\HttpFoundation\Response))
+#11 {main}  
+[2022-02-09 13:56:05] local.ERROR: ErrorException: count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\mensa\vendor\symfony\process\Symfony\Component\Process\Pipes\WindowsPipes.php:222
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'count(): Parame...', 'C:\\xampp\\htdocs...', 222, Array)
+#1 C:\xampp\htdocs\mensa\vendor\symfony\process\Symfony\Component\Process\Pipes\WindowsPipes.php(222): count(NULL)
+#2 C:\xampp\htdocs\mensa\vendor\symfony\process\Symfony\Component\Process\Pipes\WindowsPipes.php(113): Symfony\Component\Process\Pipes\WindowsPipes->write(false, false)
+#3 C:\xampp\htdocs\mensa\vendor\symfony\process\Symfony\Component\Process\Process.php(1381): Symfony\Component\Process\Pipes\WindowsPipes->readAndWrite(false, false)
+#4 C:\xampp\htdocs\mensa\vendor\symfony\process\Symfony\Component\Process\Process.php(1323): Symfony\Component\Process\Process->readPipes(false, false)
+#5 C:\xampp\htdocs\mensa\vendor\symfony\process\Symfony\Component\Process\Process.php(300): Symfony\Component\Process\Process->updateStatus(false)
+#6 C:\xampp\htdocs\mensa\vendor\symfony\process\Symfony\Component\Process\Process.php(208): Symfony\Component\Process\Process->start(NULL)
+#7 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Composer.php(47): Symfony\Component\Process\Process->run()
+#8 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Composer.php(57): Illuminate\Foundation\Composer->dumpAutoloads('--optimize')
+#9 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Console\OptimizeCommand.php(59): Illuminate\Foundation\Composer->dumpOptimized()
+#10 [internal function]: Illuminate\Foundation\Console\OptimizeCommand->fire()
+#11 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Container\Container.php(526): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Console\Command.php(115): Illuminate\Container\Container->call(Array)
+#13 C:\xampp\htdocs\mensa\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(257): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Console\Command.php(101): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\mensa\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\mensa\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Foundation\Console\OptimizeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\mensa\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\mensa\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(94): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\mensa\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 {main}  
+[2022-02-09 13:57:13] local.ERROR: Debugbar exception: A non well formed numeric value encountered  
+[2022-02-09 13:59:13] local.ERROR: Debugbar exception: A non well formed numeric value encountered  
+[2022-02-09 14:00:10] local.ERROR: Debugbar exception: A non well formed numeric value encountered  
