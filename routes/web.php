@@ -25,7 +25,6 @@ echo 'Test';
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 Route::group(['middleware' => 'auth'], function () {
-
     Route::get('home', 'HomeController@index');
     Route::resource('labels', 'LabelController');
     Route::resource('menus', 'MenuController');
