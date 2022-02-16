@@ -32,15 +32,15 @@ class AuthController extends Controller
     public function __construct()
     {
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
-      //  $this->middleware('guest', ['except' => 'getLogout']);
+        //  $this->middleware('guest', ['except' => 'getLogout']);
     }
 
     public function getLogout()
     {
         Auth::logout();
-       // $this->middleware('auth')->logout();
-      //  $this->middleware->auth->logout();
-       // \Illuminate\Auth\Guard::logout();
+        // $this->middleware('auth')->logout();
+        //  $this->middleware->auth->logout();
+        // \Illuminate\Auth\Guard::logout();
         Session::flush();
 
         return redirect('/home');

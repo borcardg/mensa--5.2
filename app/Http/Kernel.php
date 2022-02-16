@@ -11,7 +11,6 @@ class Kernel extends HttpKernel
      *
      * @var array
      */
-
     protected $middlewareGroups = [
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
@@ -25,6 +24,7 @@ class Kernel extends HttpKernel
             'throttle:60,1',
         ],
     ];
+
     /**
      * The application's route middleware.
      *
