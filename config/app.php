@@ -2,6 +2,18 @@
 
 return [
 
+    /*
+    |--------------------------------------------------------------------------
+    | Application Name
+    |--------------------------------------------------------------------------
+    |
+    | This value is the name of your application. This value is used when the
+    | framework needs to place the application's name in a notification or
+    | any other location as required by the application or its packages.
+    */
+
+    'name' => 'My Application',
+
     'env' => env('APP_ENV', 'production'),
 
     /*
@@ -143,6 +155,7 @@ return [
         'Illuminate\Foundation\Providers\FoundationServiceProvider',
         'Illuminate\Hashing\HashServiceProvider',
         'Illuminate\Mail\MailServiceProvider',
+        Illuminate\Notifications\NotificationServiceProvider::class,
         'Illuminate\Pagination\PaginationServiceProvider',
         'Illuminate\Pipeline\PipelineServiceProvider',
         'Illuminate\Queue\QueueServiceProvider',
@@ -158,6 +171,7 @@ return [
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
@@ -190,6 +204,7 @@ return [
         'Artisan'   => 'Illuminate\Support\Facades\Artisan',
         'Auth'      => 'Illuminate\Support\Facades\Auth',
         'Blade'     => 'Illuminate\Support\Facades\Blade',
+        'Bus' => Illuminate\Support\Facades\Bus::class,
         'Cache'     => 'Illuminate\Support\Facades\Cache',
         'Config'    => 'Illuminate\Support\Facades\Config',
         'Cookie'    => 'Illuminate\Support\Facades\Cookie',
@@ -202,6 +217,7 @@ return [
         'Lang'      => 'Illuminate\Support\Facades\Lang',
         'Log'       => 'Illuminate\Support\Facades\Log',
         'Mail'      => 'Illuminate\Support\Facades\Mail',
+        'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password'  => 'Illuminate\Support\Facades\Password',
         'Queue'     => 'Illuminate\Support\Facades\Queue',
         'Redirect'  => 'Illuminate\Support\Facades\Redirect',
